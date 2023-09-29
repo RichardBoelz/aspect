@@ -633,8 +633,6 @@ namespace aspect
     heating_model_manager.update();
     adiabatic_conditions->update();
     mesh_refinement_manager.update();
-
-
     if (parameters.mesh_deformation_enabled)
       mesh_deformation->update();
 

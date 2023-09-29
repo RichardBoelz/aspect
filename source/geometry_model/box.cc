@@ -41,8 +41,6 @@ namespace aspect
       // Get pointer to initial topography model
       topo_model = const_cast<InitialTopographyModel::Interface<dim>*>(&this->get_initial_topography_model());
 
-      //TODO: Is there a way to initialize this within the .h so it doesn't need to be resized here?
-      //surface_height.resize(dim);
       // Check that initial topography is required.
       // If so, connect the initial topography function
       // to the right signals: It should be applied after
